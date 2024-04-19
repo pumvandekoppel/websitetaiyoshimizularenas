@@ -1,68 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taiyo Shimizu - Work</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="logo">
-              <h1><a href="index.html">Taiyo Shimizu</a></h1>
-            </ul>
-            <ul class="nav">
-              <li>
-                <a href="paintings.html">paintings</a>
-              </li>
-              <li>&ensp;<a href="#">]</a>&ensp;</li>
-              <li>
-                <a href="about.html">about</a>
-              </li>
-            </ul>
-          </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taiyo Shimizu Larenas - paintings</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
+  </head>
+  <body class="page">
+    <header class="header">
+      <nav class="menu">
+        <ul class="header__logo">
+          <h1 class="header__name">
+            <a class="menu__link" href="index.html">Taiyo Shimizu Larenas</a>
+          </h1>
+        </ul>
+        <ul class="menu__navigation">
+          <li class="menu__page">
+            <a class="menu__link" href="paintings.html">paintings</a>
+          </li>
+          <li class="menu__separator">
+            &ensp;<a class="menu__link" href="#">]</a>&ensp;
+          </li>
+          <li class="menu__separator">
+            <a class="menu__link" href="about.html">about</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <section id="2024"><h2>2024</h2>
-            <img src="assets/vloer/2024/vloer-19.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-26.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-27.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-29.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-31.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-35.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-36.jpg" alt="">
-            <img src="assets/vloer/2024/vloer-45.jpg" alt="">
-
-        </section>
-        <section id="2023"><h2>2023</h2>
-            <img src="assets/vloer/2023/vloer-3.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-4.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-7.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-13.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-14.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-15.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-17.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-18.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-21.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-22.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-24.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-25.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-26.jpg" alt="">
-            <img src="assets/vloer/2023/vloer-35.jpg" alt="">
-        </section>
-        <section id="2022"><h2>2022</h2>
-            <img src="assets/vloer/2022/vloer-1.jpg" alt="">
-            <img src="assets/vloer/2022/vloer-2.jpg" alt="">
-            <img src="assets/vloer/2022/vloer-10.jpg" alt="">
-            <img src="assets/vloer/2022/vloer-11.jpg" alt="">
-            <img src="assets/vloer/2022/vloer-12.jpg" alt="">
-            <img src="assets/vloer/2022/vloer-16.jpg" alt="">
-        </section>
+    <main class="content">
+      <div class="year__info row">
+        <h2 class="year__header">[ 2024 ]</h2>
+        <h2 class="year__drawer_plus" onclick="drawertwentyfour()">+</h2>
+        <h2 class="year__drawer_minus" onclick="drawertwentyfour()">-</h2>
+      </div>
+      <section class="year row">
+        <div class="column column-left">
+          <figure
+            onclick="crop26()"
+            class="painting-context painting-context__twentyfour desktop-preview__twentyfour mobile-preview__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-26.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>50x56cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop31()"
+            class="painting-context painting-context__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-31.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>60x70cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop19()"
+            class="painting-context painting-context__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-19.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>120x140cm, oil on linen</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column column-middle">
+          <figure
+            onclick="crop27()"
+            class="painting-context painting-context__twentyfour desktop-preview__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-27.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>50x56cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop36()"
+            class="painting-context painting-context__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-36.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>60x70cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop35()"
+            class="painting-context painting-context__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-35.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>60x70cm, oil on linen</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column column-right">
+          <figure
+            onclick="crop29()"
+            class="painting-context painting-context__twentyfour desktop-preview__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-29.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>50x56cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop45()"
+            class="painting-context painting-context__twentyfour"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-45.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>120x140cm, oil on linen</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="year__info row">
+        <h2 class="year__header">[ 2023 ]</h2>
+        <h2 class="year__drawer_plus" onclick="drawertwentythree()">+</h2>
+        <h2 class="year__drawer_minus" onclick="drawertwentythree()">-</h2>
+      </div>
+      <section class="year row">
+        <div class="column column-left">
+          <figure
+            onclick="crop3()"
+            class="painting-context painting-context__twentythree desktop-preview__twentythree mobile-preview__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-3.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>59x118cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop4()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-4.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>118x95cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop7()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-7.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>95x118cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop13()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-13.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>42x56cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop14()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-14.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>40x40cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column column-middle">
+          <figure
+            onclick="crop21()"
+            class="painting-context painting-context__twentythree desktop-preview__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-21.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>100x120cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop22()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-22.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>85x100cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop24()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-24.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>75x100cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop25()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-25.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>70x100cm, oil on linen</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column column-right">
+          <!-- <figure class="painting-context painting-context__twentythree">
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-15.jpg"
+              alt=""
+            />
+          </figure> -->
+          <figure
+            onclick="crop17()"
+            class="painting-context painting-context__twentythree desktop-preview__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-17.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>60x70cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop18()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-18.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>40x50cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop26_2()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2023/vloer-26.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>50x56cm, oil on linen</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop35()"
+            class="painting-context painting-context__twentythree"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2024/vloer-35.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>50x56cm, oil on linen</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="year__info row">
+        <h2 class="year__header">[ 2022 ]</h2>
+        <h2 class="year__drawer_plus" onclick="drawertwentytwo()">+</h2>
+        <h2 class="year__drawer_minus" onclick="drawertwentytwo()">-</h2>
+      </div>
+      <section class="year row">
+        <div class="column column-left">
+          <figure
+            onclick="crop1()"
+            class="painting-context painting-context__twentytwo desktop-preview__twentytwo mobile-preview__twentytwo"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2022/vloer-1.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>155x173cm, sublimation print and oil on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop11()"
+            class="painting-context painting-context__twentytwo"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2022/vloer-11.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>90x120cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column column-middle">
+          <figure
+            onclick="crop2()"
+            class="painting-context painting-context__twentytwo desktop-preview__twentytwo"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2022/vloer-2.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>155x173cm, sublimation print on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop10()"
+            class="painting-context painting-context__twentytwo"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2022/vloer-10.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>75x100cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column column-right">
+          <figure
+            onclick="crop12()"
+            class="painting-context painting-context__twentytwo desktop-preview__twentytwo"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2022/vloer-12.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>100x75, oil on canvas</small>
+            </figcaption>
+          </figure>
+          <figure
+            onclick="crop16()"
+            class="painting-context painting-context__twentytwo"
+          >
+            <img
+              class="painting-context__picture"
+              src="assets/vloer/2022/vloer-16.jpg"
+              alt=""
+            />
+            <figcaption class="painting-context__description">
+              <small>40x50cm, oil on canvas</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="modal">
+        <div class="modal-background" onclick="close()"></div>
+        <div class="modal-content"></div>
+      </div>
     </main>
-    <footer class="horizontal">
-        <div></div>
-        <div class="right"><a href="#">^</a></div>
+    <footer class="footer">
+      <div class="up">
+        <h2><a class="up__link" href="#">^</a></h2>
+      </div>
     </footer>
-</body>
+    <script src="drawers.js"></script>
+    <script src="crop.js"></script>
+    <script src="close.js"></script>
+  </body>
 </html>

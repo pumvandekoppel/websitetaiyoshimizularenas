@@ -3,73 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taiyo Shimizu - About</title>
+    <title>Taiyo Shimizu Larenas - about</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="logo">
-          <h1><a href="index.html">Taiyo Shimizu</a></h1>
+  <body class="page">
+    <header class="header">
+      <nav class="menu">
+        <ul class="header__logo">
+          <h1 class="header__name">
+            <a class="menu__link" href="index.html">Taiyo Shimizu Larenas</a>
+          </h1>
         </ul>
-        <ul class="nav">
-          <li>
-            <a href="paintings.html">paintings</a>
+        <ul class="menu__navigation">
+          <li class="menu__page">
+            <a class="menu__link" href="paintings.html">paintings</a>
           </li>
-          <li>&ensp;<a href="#">[</a>&ensp;</li>
-          <li>
-            <a href="about.html">about</a>
+          <li class="menu__separator">
+            &ensp;<a class="menu__link" href="#">[</a>&ensp;
+          </li>
+          <li class="menu__separator">
+            <a class="menu__link" href="about.html">about</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main id="about">
-      <div class="horizontal">
-        <div class="image left">
-          <img id="portrait" src="assets/IMG_1202.jpeg" alt="artist picture" />
-        </div>
+    <main class="content content-about">
+      <div class="row-about">
+        <figure class="artist-portrait">
+          <img class="artist-portrait__photo" src="assets/R0003930.jpg" alt="artist picture" />
+        </figure>
 
-        <div class="text right">
-          <h2>[ about</h2>
-          <p class="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat
-            voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri
-            tamen permagna accessio potest, si aliquod aeternum et.
+        <div class="info">
+          <h2 class="info__heading">[ artist statement ]</h2>
+          <p class="info__artiststatement">
+            I was born in Utrecht, the Netherlands. My youth was spent living in Bolivia, Italy, the United States and Peru. At the start of my teenage years my family and I moved back to the Netherlands, where I have lived ever since.
             <br /><br />
-            Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio
-            turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber
-            cum et mortem contemnit, qua qui est imbutus quietus esse numquam
-            potest. Praeterea bona praeterita grata recordatione renovata
-            delectant. Est autem situm in nobis ut et voluptates et dolores
-            nasci fatemur e corporis voluptatibus et doloribus -- itaque
-            concedo, quod modo dicebas, cadere causa, si qui.
-            <br />
-            Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio
-            turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber
-            cum et mortem contemnit, qua qui est imbutus quietus esse numquam
-            potest. Praeterea bona praeterita grata recordatione renovata
-            delectant. Est autem.<br />
-            <br />
-            email: <a href="mailto:tshimizula@gmail.com">tshimizula@gmail.com</a>
-          </p>
+            My work is a visualization of my reflection on the human condition, as personally experienced. I focus on the human figure, its shape, positions and facial expressions in order to contemplate this. <br>I use the human figure as a means to this end, as something to hold onto whilst conveying the deepest emotions I experience.
+            <br /><br /><br /></p>
+            <h2 class="info__heading">[ contact ]</h2>
+            <a class="info__mail" href="mailto:tshimizula@gmail.com">tshimizula@gmail.com</a>
         </div>
       </div>
     </main>
 
-    <footer class="horizontal">
-      <div></div>
-      <div class="right">
-        <a onclick="reclame()">
-          <small id="knop"><strong>...</strong></small>
-          <small id="reclame"
-            >&ensp;website by
-            <a href="mailto:pumvandekoppel@gmail.com"
-              >Pum van de Koppel</a
-            ></small
-          >
+    <footer class="footer">
+        <a class="self-promotion" onclick="reclame()">
+          <small class="self-promotion_hidden">p.s.</small>
+          <small class="self-promotion_shown"
+            >&ensp;website | Pum van de Koppel
+            <a class="selfpromotion__mail" href="mailto:pumvandekoppel@gmail.com"></a
+          ></small>
         </a>
-      </div>
     </footer>
 
     <script src="reclame.js"></script>
