@@ -75,9 +75,16 @@ painting-crop {
 /* MAIN */
 
 .index__picture {
-  display:flex;
-  max-width: 100%;
-  margin-top: -55px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  max-width: 78vw;
+  max-height: calc(100vh - 276px);
+}
+
+.content__index {
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
 }
 
 .content {
@@ -250,7 +257,7 @@ div.modal-content {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 780px;
+  width: 75%;
   transform: translate(-50%, -50%);
   background: rgb(0, 0, 0);
   z-index: 2;
@@ -329,6 +336,16 @@ div.modal-content {
     padding-right: 0px;
     padding-left: 0px;
   }
+
+  div.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1072px;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 755px) {
@@ -373,5 +390,19 @@ div.modal-content {
   .column-right > .painting-context {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .painting-context:not(.mobile-preview__twentyfour):not(.mobile-preview__twentythree):not(.mobile-preview__twentytwo) {
+    display: none;
+  }
+
+  div.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 755px;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    z-index: 2;
   }
 }
