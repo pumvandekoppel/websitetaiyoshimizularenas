@@ -77,13 +77,15 @@ painting-crop {
 .index__picture {
   padding-top: 28px;
   padding-bottom: 28px;
+  max-width: 78vw;
   max-height: calc(100vh - 276px);
+  width: auto;
+  height: auto;
 }
 
 .content__index {
   height: calc(100vh - 150px);
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .content {
@@ -371,7 +373,7 @@ div.modal-content {
   }
 
   .year__info {
-    display: flex;
+    display: fl;
   }
 
   .column {
