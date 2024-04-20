@@ -371,6 +371,10 @@ div.modal-content {
     display: block;
   }
 
+  .year__info {
+    display: flex;
+  }
+
   .column {
     width: 78vw;
     display: flex;
