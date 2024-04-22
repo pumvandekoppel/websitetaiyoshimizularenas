@@ -187,6 +187,7 @@ painting-crop {
   -moz-user-select: none;    
   -ms-user-select: none;      
   user-select: none;
+  cursor: s-resize;
 }
 
 
@@ -196,6 +197,8 @@ painting-crop {
   -moz-user-select: none;    
   -ms-user-select: none;      
   user-select: none;
+  cursor: n-resize;
+
 }
 
 
@@ -250,6 +253,7 @@ div.modal-background {
   height: 100%;
   background: rgba(255, 255, 255/* , 0.85 */);
   z-index: 1;
+  cursor: zoom-out;
 }
 
 div.modal-close {
