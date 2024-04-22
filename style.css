@@ -306,6 +306,7 @@ div.modal-content {
 .self-promotion_shown {
   display: none;
   padding-top: 150px;
+  cursor: help;
 }
 
 /* RESPONSIVE */
