@@ -8,7 +8,7 @@
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-left: 11vw;
   margin-right: 11vw;
 }
@@ -88,8 +88,17 @@ painting-crop {
   display: block;
 }
 
+.content-paintings {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.content-about {
+  margin-top: 10vh;
+}
+
 .content {
-    flex: 1 1 calc(100vh - 200px);;
+    flex: 1 1 calc(100vh - 200px);
 }
 
 .column {
