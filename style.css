@@ -303,10 +303,14 @@ div.modal-content {
   text-decoration: none;
 }
 
+.self-promotion_hidden {
+  cursor: help;
+}
+
 .self-promotion_shown {
   display: none;
   padding-top: 150px;
-  cursor: help;
+  cursor: e-resize;
 }
 
 /* RESPONSIVE */
