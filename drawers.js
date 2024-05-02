@@ -28,7 +28,7 @@ var mobilescreen = window.matchMedia("(max-width: 755px)");
 function drawertwentyfour() {
   if (drawertwentyfourclosed == true) {
     document.getElementsByClassName("year__drawer_minus")[0].style.display =
-      "initial";
+      "flex";
     document.getElementsByClassName("year__drawer_plus")[0].style.display =
       "none";
     if (mobilescreen.matches) {
@@ -45,7 +45,7 @@ function drawertwentyfour() {
     document.getElementsByClassName("year__drawer_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawer_plus")[0].style.display =
-      "initial";
+      "flex";
     if (mobilescreen.matches) {
       hiddenfrommobile__twentyfour.forEach(function (element) {
         element.style.display = "none";
@@ -74,7 +74,7 @@ function drawertwentyfour() {
 function drawertwentythree() {
   if (drawertwentythreeclosed == true) {
     document.getElementsByClassName("year__drawer_minus")[0].style.display =
-      "initial";
+      "flex";
     document.getElementsByClassName("year__drawer_plus")[0].style.display =
       "none";
     if (mobilescreen.matches) {
@@ -91,7 +91,7 @@ function drawertwentythree() {
     document.getElementsByClassName("year__drawer_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawer_plus")[0].style.display =
-      "initial";
+      "flex";
     if (mobilescreen.matches) {
       hiddenfrommobile__twentythree.forEach(function (element) {
         element.style.display = "none";
@@ -120,7 +120,7 @@ function drawertwentythree() {
 function drawertwentytwo() {
   if (drawertwentytwoclosed == true) {
     document.getElementsByClassName("year__drawer_minus")[0].style.display =
-      "initial";
+      "flex";
     document.getElementsByClassName("year__drawer_plus")[0].style.display =
       "none";
     if (mobilescreen.matches) {
@@ -137,7 +137,7 @@ function drawertwentytwo() {
     document.getElementsByClassName("year__drawer_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawer_plus")[0].style.display =
-      "initial";
+      "flex";
     if (mobilescreen.matches) {
       hiddenfrommobile__twentytwo.forEach(function (element) {
         element.style.display = "none";
