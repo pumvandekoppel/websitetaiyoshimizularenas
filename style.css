@@ -161,7 +161,7 @@ h1 {
 .painting-context__description {
   color: black;
   transition-property: color;
-  transition-duration: .22s;
+  transition-duration: .32s;
   text-align: right;
 }
 
@@ -175,13 +175,12 @@ h1 {
 }
 
 .painting-context__picture + .painting-context__description small {
-  transition: color .24s ease-in-out;
+  transition: color .74s ease-in-out;
 }
 
 .painting-context__picture:hover + .painting-context__description small {
   color: white;
   transition: .22s;
-
 }
 
 small {
