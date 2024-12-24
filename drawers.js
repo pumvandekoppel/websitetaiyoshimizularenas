@@ -25,6 +25,8 @@ const hiddenfrommobile__twentytwo = document.querySelectorAll(
 
 var mobilescreen = window.matchMedia("(max-width: 755px)");
 
+drawertwentyfour()
+
 function drawertwentyfour() {
   if (drawertwentyfourclosed == true) {
     document.getElementsByClassName("year__drawertwentyfour_minus")[0].style.display =
@@ -71,6 +73,8 @@ function drawertwentyfour() {
   }
 }
 
+drawertwentythree()
+
 function drawertwentythree() {
   if (drawertwentythreeclosed == true) {
     document.getElementsByClassName("year__drawertwentythree_minus")[0].style.display =
@@ -116,6 +120,8 @@ function drawertwentythree() {
     drawertwentythreeclosed = true;
   }
 }
+
+drawertwentytwo()
 
 function drawertwentytwo() {
   if (drawertwentytwoclosed == true) {
