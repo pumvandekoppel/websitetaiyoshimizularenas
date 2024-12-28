@@ -23,8 +23,10 @@ painting-crop {
 
 #random-image {
   max-width: 78vw;
-  margin-top: 13vh;
+  margin-top: 9vh;
   margin-bottom: 15vh;
+  height: calc(100vh - 150px - 13vh);
+  width: auto;
 }
 
 .menu__link {
@@ -368,6 +370,14 @@ div.modal-content {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1072px) {
+
+  #random-image {
+    width: 78vw;
+    height: auto;
+    margin-top: 9vh;
+    margin-bottom: 15vh;
+  }
+
   .artist-portrait {
     flex: 0 20 0;
     margin-bottom: 17px;
