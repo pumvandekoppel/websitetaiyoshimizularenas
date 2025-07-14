@@ -388,7 +388,7 @@ div.modal-content {
     width: 86vw;
     max-width: 86vw;
     height: auto;
-    margin-top: 0.2vh;
+    margin-top: .83em;
     margin-bottom: 15vh;
     object-fit:scale-down;
     margin-left: 0vw;
