@@ -110,6 +110,12 @@ h1 {
   display: block;
 }
 
+h2#hint {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+}
+
 .content-paintings {
   margin-top: 10vh;
   margin-bottom: 5vh;
