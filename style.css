@@ -55,7 +55,7 @@ main.content__index {
 /* HEADER */
 
 .header {
-  height: 100px;
+  height: 94.2px;
   width: 78vw;
   flex: 0 0 100px;
   /* background-color: aqua; */
@@ -116,13 +116,25 @@ h2#hint {
   font-style: italic;
 }
 
+.artist-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+
+.artist-info > div {
+  margin-left: 0;
+}
+
 .content-paintings {
   margin-top: 10vh;
   margin-bottom: 5vh;
 }
 
 .content-about {
-  margin-top: 10vh;
+  margin-top: 5vh;
+  margin-bottom: calc(5vh - 92px);
 }
 
 .content {
@@ -197,6 +209,8 @@ h2#hint {
   transition: .22s;
 }
 
+.artist-portrait__credits
+
 small {
   font-size:14px;
 }
@@ -219,6 +233,7 @@ small {
   align-content: baseline;
   margin-top: auto;
   margin-bottom: auto;
+  width: 100%;
 }
 
 .year {
@@ -255,15 +270,27 @@ small {
   display: none;
 }
 
+.info__contact {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .artist-portrait {
   padding-left: 5px;
   padding-right: 30px;
   justify-content: end;
   margin-bottom: 0;
-  flex: 0 1 410px;
+  flex: 0 1 323px;
+  margin-left: 0;
 }
 
 .artist-portrait__photo {
+  max-width: 100%;
+  width: 261px;
+}
+
+.artist-portrait__credits {
+  text-align: left;
   max-width: 100%;
 }
 
@@ -278,13 +305,20 @@ small {
   justify-content: space-between;
 }
 
+.info__artiststatement {
+  margin-bottom: auto;
+  margin-top: 0;
+  max-width: 72ch;
+  font-size: 0.9375em;
+}
+
 h2 {
   font-size: 1.25em;
 }
 
 .info__mail, .info__tel {
   text-decoration: none;
-  padding-bottom: 1em;
+  padding-bottom: 0.9375em;
 }
 
 content-about .text__heading {
@@ -341,17 +375,23 @@ div.modal-content {
 /* FOOTER */
 
 .footer {
-  height: 100px;
+  height: 92px;
   width: 78vw;
   display: flex;
   justify-content: end;
   flex: 0 0 100px;
   margin-top: auto;
+  padding-top: 24px;
 }
 
 .up__link {
   text-decoration: none;
   font-size: xx-large;
+}
+
+.self-promotion {
+  margin-bottom: 40px;
+  margin-top: auto;
 }
 
 .self-promotion_hidden {
@@ -373,6 +413,8 @@ div.modal-content {
   padding: 0;
   margin: 0;
   cursor: alias;
+  margin-bottom: 40px;
+  margin-top: auto;
 }
 
 .hide-on-desktop {
@@ -433,8 +475,8 @@ div.modal-content {
 
   .row-about {
     margin-top: 10px;
-    flex-direction: column;
-    width: 78vw;
+    flex-direction: row;
+    flex: 1 1;
   }
 
   .index__picture {
