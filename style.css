@@ -452,6 +452,14 @@ div.modal-content {
     flex-grow: 0;
   }
 
+  .content-about {
+    padding-bottom: 40px;
+  }
+
+  .row-about {
+    display: block;
+  }
+
   .artist-portrait {
     flex: 0 20 0;
     margin-bottom: 17px;
@@ -511,6 +519,14 @@ div.modal-content {
     transform: translate(-50%, -50%);
     background: rgb(0, 0, 0);
     z-index: 2;
+  }
+
+    .self-promotion {
+    margin-top: calc(40px);
+  }
+
+  #website-pum {
+    margin-top: calc(40px);
   }
 }
 
