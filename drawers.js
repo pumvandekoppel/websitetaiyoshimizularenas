@@ -38,6 +38,7 @@ drawertwentyfive()
 function drawertwentyfive() {
   if (drawertwentyfiveclosed == true) {
     document.getElementsByClassName("year__header_twentyfive")[0].style.display = "initial";
+    document.getElementsByClassName("year__header_twentyfive")[0].style.cursor = "n-resize";
     document.getElementsByClassName("year__drawertwentyfive_minus")[0].style.display =
       "initial";
     document.getElementsByClassName("year__drawertwentyfive_plus")[0].style.display =
@@ -53,6 +54,7 @@ function drawertwentyfive() {
     }
     drawertwentyfiveclosed = false;
   } else {
+    document.getElementsByClassName("year__header_twentyfive")[0].style.cursor = "s-resize";
     document.getElementsByClassName("year__drawertwentyfive_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawertwentyfive_plus")[0].style.display =
@@ -87,6 +89,7 @@ drawertwentyfour()
 function drawertwentyfour() {
   if (drawertwentyfourclosed == true) {
     document.getElementsByClassName("year__header_twentyfour")[0].style.display = "initial";
+    document.getElementsByClassName("year__header_twentyfour")[0].style.cursor = "n-resize";
     document.getElementsByClassName("year__drawertwentyfour_minus")[0].style.display =
       "initial";
     document.getElementsByClassName("year__drawertwentyfour_plus")[0].style.display =
@@ -102,6 +105,7 @@ function drawertwentyfour() {
     }
     drawertwentyfourclosed = false;
   } else {
+    document.getElementsByClassName("year__header_twentyfour")[0].style.cursor = "s-resize";
     document.getElementsByClassName("year__drawertwentyfour_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawertwentyfour_plus")[0].style.display =
@@ -136,6 +140,7 @@ drawertwentythree()
 function drawertwentythree() {
   if (drawertwentythreeclosed == true) {
     document.getElementsByClassName("year__header_twentythree")[0].style.display = "initial";
+    document.getElementsByClassName("year__header_twentythree")[0].style.cursor = "n-resize";
     document.getElementsByClassName("year__drawertwentythree_minus")[0].style.display =
       "initial";
     document.getElementsByClassName("year__drawertwentythree_plus")[0].style.display =
@@ -151,6 +156,7 @@ function drawertwentythree() {
     }
     drawertwentythreeclosed = false;
   } else {
+    document.getElementsByClassName("year__header_twentythree")[0].style.cursor = "s-resize";
     document.getElementsByClassName("year__drawertwentythree_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawertwentythree_plus")[0].style.display =
@@ -185,6 +191,7 @@ drawertwentytwo()
 function drawertwentytwo() {
   if (drawertwentytwoclosed == true) {
     document.getElementsByClassName("year__header_twentytwo")[0].style.display = "initial";
+    document.getElementsByClassName("year__header_twentytwo")[0].style.cursor = "n-resize";
     document.getElementsByClassName("year__drawertwentytwo_minus")[0].style.display =
       "flex";
     document.getElementsByClassName("year__drawertwentytwo_plus")[0].style.display =
@@ -200,6 +207,7 @@ function drawertwentytwo() {
     }
     drawertwentytwoclosed = false;
   } else {
+    document.getElementsByClassName("year__header_twentytwo")[0].style.cursor = "s-resize";
     document.getElementsByClassName("year__drawertwentytwo_minus")[0].style.display =
       "none";
     document.getElementsByClassName("year__drawertwentytwo_plus")[0].style.display =

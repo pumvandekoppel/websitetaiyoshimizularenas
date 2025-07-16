@@ -396,18 +396,23 @@ div.modal-content {
 .self-promotion {
   margin-bottom: 40px;
   margin-top: auto;
+  height: auto;
+  width: 9.4ch;
 }
 
 .self-promotion_hidden {
   cursor: help;
   margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .self-promotion_shown {
   display: none;
-  padding-top: 250px;
-  margin-top: 250px;
+  margin-top: auto;
+  margin-bottom: 40px;
+  width: 9.4ch;
   cursor: w-resize;
+  height: auto;
 }
 
 #website-pum {
@@ -603,5 +608,10 @@ div.modal-content {
 
   .footer {
     justify-content: start;
+  }
+
+  body#paintings .footer {
+    width: 100%;
+    justify-content: end;
   }
 }
