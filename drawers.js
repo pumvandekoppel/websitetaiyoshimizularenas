@@ -1,6 +1,15 @@
+var drawertwentyfiveclosed = new Boolean(true);
 var drawertwentyfourclosed = new Boolean(true);
 var drawertwentythreeclosed = new Boolean(true);
 var drawertwentytwoclosed = new Boolean(true);
+
+let hiddenfromdesktop__twentyfive = document.querySelectorAll(
+  ".painting-context__twentyfive:not(.desktop-preview__twentyfive)"
+);
+let hiddenfrommobile__twentyfive = document.querySelectorAll(
+  ".painting-context__twentyfive:not(.mobile-preview__twentyfive)"
+);
+
 
 let hiddenfromdesktop__twentyfour = document.querySelectorAll(
   ".painting-context__twentyfour:not(.desktop-preview__twentyfour)"
@@ -24,6 +33,54 @@ const hiddenfrommobile__twentytwo = document.querySelectorAll(
 );
 
 var mobilescreen = window.matchMedia("(max-width: 755px)");
+
+drawertwentyfive()
+
+function drawertwentyfive() {
+  if (drawertwentyfiveclosed == true) {
+    document.getElementsByClassName("year__drawertwentyfive_minus")[0].style.display =
+      "initial";
+    document.getElementsByClassName("year__drawertwentyfive_plus")[0].style.display =
+      "none";
+    if (mobilescreen.matches) {
+      hiddenfrommobile__twentyfive.forEach(function (element) {
+        element.style.display = "initial";
+      });
+    } else {
+      hiddenfromdesktop__twentyfive.forEach(function (element) {
+        element.style.display = "initial";
+      });
+    }
+    drawertwentyfiveclosed = false;
+  } else {
+    document.getElementsByClassName("year__drawertwentyfive_minus")[0].style.display =
+      "none";
+    document.getElementsByClassName("year__drawertwentyfive_plus")[0].style.display =
+      "initial";
+    if (mobilescreen.matches) {
+      hiddenfrommobile__twentyfive.forEach(function (element) {
+        element.style.display = "none";
+      });
+      document.getElementsByClassName(
+        "mobile-preview__twentyfive"
+      )[0].style.display = "initial";
+    } else {
+      hiddenfromdesktop__twentyfive.forEach(function (element) {
+        element.style.display = "none";
+      });
+      document.getElementsByClassName(
+        "desktop-preview__twentyfive"
+      )[0].style.display = "initial";
+      document.getElementsByClassName(
+        "desktop-preview__twentyfive"
+      )[1].style.display = "initial";
+      document.getElementsByClassName(
+        "desktop-preview__twentyfive"
+      )[2].style.display = "initial";
+    }
+    drawertwentyfiveclosed = true;
+  }
+}
 
 drawertwentyfour()
 
