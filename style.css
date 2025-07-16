@@ -78,7 +78,7 @@ main.content__index {
 }
 
 h1 {
-  font-weight:600;
+  font-weight: 600;
   font-size: 1.5em;
 }
 
@@ -113,6 +113,7 @@ h1 {
 h2#hint {
   font-size: 1em;
   font-weight: normal;
+  cursor: help;
   font-style: italic;
 }
 
@@ -187,7 +188,7 @@ h2#hint {
 .painting-context__description {
   color: black;
   transition-property: color;
-  transition-duration: .32s;
+  transition-duration: 0.32s;
   text-align: right;
 }
 
@@ -201,18 +202,16 @@ h2#hint {
 }
 
 .painting-context__picture + .painting-context__description small {
-  transition: color .74s ease-in-out;
+  transition: color 0.74s ease-in-out;
 }
 
 .painting-context__picture:hover + .painting-context__description small {
   color: white;
-  transition: .22s;
+  transition: 0.22s;
 }
 
-.artist-portrait__credits
-
-small {
-  font-size:14px;
+.artist-portrait__credits small {
+  font-size: 14px;
 }
 
 .row {
@@ -240,7 +239,9 @@ small {
   margin-bottom: 74px;
 }
 
+year__header,
 .year__drawer_plus,
+.year__drawertwentyfive_plus,
 .year__drawertwentyfour_plus,
 .year__drawertwentythree_plus,
 .year__drawertwentytwo_plus {
@@ -252,7 +253,9 @@ small {
   cursor: s-resize;
 }
 
+.year__header,
 .year__drawer_minus,
+.year__drawertwentyfive_minus,
 .year__drawertwentyfour_minus,
 .year__drawertwentythree_minus,
 .year__drawertwentytwo_minus {
@@ -264,9 +267,9 @@ small {
   cursor: n-resize;
 }
 
-.painting-context:not(.desktop-preview__twentyfour):not(
-    .desktop-preview__twentythree
-  ):not(.desktop-preview__twentytwo) {
+.painting-context:not(.desktop-preview__twentyfive):not(
+    .desktop-preview__twentyfour
+  ):not(.desktop-preview__twentythree):not(.desktop-preview__twentytwo) {
   display: none;
 }
 
@@ -316,7 +319,8 @@ h2 {
   font-size: 1.25em;
 }
 
-.info__mail, .info__tel {
+.info__mail,
+.info__tel {
   text-decoration: none;
   padding-bottom: 0.9375em;
 }
@@ -386,7 +390,7 @@ div.modal-content {
 
 .up__link {
   text-decoration: none;
-  font-size: xx-large;
+  font-size: 14px;
 }
 
 .self-promotion {
@@ -424,7 +428,6 @@ div.modal-content {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1072px) {
-
   .page {
     width: 86vw;
     margin-left: 7vw;
@@ -441,7 +444,7 @@ div.modal-content {
     height: auto;
     margin-top: 3.2em;
     margin-bottom: 3.2em;
-    object-fit:scale-down;
+    object-fit: scale-down;
     margin-left: 0vw;
     margin-right: 0vw;
   }
@@ -521,7 +524,7 @@ div.modal-content {
     z-index: 2;
   }
 
-    .self-promotion {
+  .self-promotion {
     margin-top: calc(40px);
   }
 
@@ -557,6 +560,10 @@ div.modal-content {
     display: flex;
   }
 
+  .year__info > * {
+    padding-right: 0.25ch;
+  }
+
   .column {
     width: 86vw;
     display: flex;
@@ -578,9 +585,9 @@ div.modal-content {
     margin-right: 0;
   }
 
-  .painting-context:not(.mobile-preview__twentyfour):not(
-      .mobile-preview__twentythree
-    ):not(.mobile-preview__twentytwo) {
+  .painting-context:not(.mobile-preview__twentyfive):not(
+      .mobile-preview__twentyfour
+    ):not(.mobile-preview__twentythree):not(.mobile-preview__twentytwo) {
     display: none;
   }
 
